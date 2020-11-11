@@ -1,5 +1,5 @@
 # Entropia-Limbii-Romane
-Proiect ASC - determinarea limbii romane
+Proiect ASC - determinarea entropiei limbii romane
 
 Echipa de proiect:
 
