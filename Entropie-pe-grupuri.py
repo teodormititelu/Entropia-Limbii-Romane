@@ -27,7 +27,7 @@ def string_to_number(s): #funcție care transformă un șir de litere din limba 
     return result
 
 def number_to_string(nr): #funcție care transformă un număr natural într-un unic șir de litere din limba română
-    new_word = ""
+    new_word = letter = ""
     while nr > 0:
         rest = nr % 32
         nr //= 32
