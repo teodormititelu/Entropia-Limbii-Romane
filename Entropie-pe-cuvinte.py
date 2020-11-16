@@ -45,7 +45,3 @@ for key in word_list:
     expected_value += (1/ratio) * math.log2(ratio)
 
 print("Entropia pe cuvinte a limbii române este:", expected_value)
-
-expected_value = expected_value / med_len
-
-print("Entropia limbii române este:", expected_value)
