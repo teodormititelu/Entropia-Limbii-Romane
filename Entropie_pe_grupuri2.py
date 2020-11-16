@@ -3,6 +3,7 @@ import collections
 #citim fișierul
 file = open('inputt.txt', encoding="utf8")
 s = file.read()
+n = int(input("Scrieți numărul de litere:"))
 
 def cifra(c): #funcție care returnează 1 dacă c este cifră
     if ord(c) >= ord("0") and ord(c) <= ord("9"):
@@ -48,7 +49,7 @@ def find_enthropy(nr):
 
     enthropy = enthropy / nr
 
-    print(enthropy)
+    return enthropy
 
 for word in s.lower().split():
     if word == "—" or word == "–" or word == " " or word == "":
@@ -95,4 +96,4 @@ for i in range(1,l-1):
 
 word_list = dict()
 
-find_enthropy(5)
+print("Entropia limbii române este" , find_enthropy(n))
