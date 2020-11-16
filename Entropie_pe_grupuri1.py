@@ -3,6 +3,7 @@ import math
 #citim fișierul
 file = open('inputt.txt', encoding="utf8")
 s = file.read()
+n = int(input("Scrieți numărul de litere:"))
 
 def string_to_number(s): #funcție care transformă un șir de litere din limba română într-un unic număr natural
     l = len(s)
@@ -146,4 +147,4 @@ for i in range(1,l-1):
     if word_list[i] == "î" and letter(word_list[i-1]) == 1 and letter(word_list[i+1]) == 1:
         word_list = word_list[:i] + "â" + word_list[i+1:]
 
-print(fixed_string(2))
+print("Entropia limbii române este" , fixed_string(n))
